@@ -23,15 +23,19 @@ function BuySell() {
 
   return (
     <div style={style}>
-      <Button size="small" color="secondary">Sell</Button>
-      <Button size="small" color="primary"disabled>Buy</Button>
+      <Button style={{maxWidth: '30px', maxHeight: '30px'}} color="secondary">Sell</Button>
+      <Button  style={{maxWidth: '30px', maxHeight: '30px'}}size="small" color="primary"disabled>Buy</Button>
       <br></br>
-      <MenuItem  size="small" value="Tom Reiven">
+      <MenuItem style={{maxWidth: '1000px', maxHeight: '20px'}}  size="small" value="Tom Reiven">
         <em>Product</em>
+      </MenuItem>
+      <br></br>
+      <MenuItem style={{maxWidth: '100px', maxHeight: '20px'}} value="Tom Reiven">
+        <em>Quantity</em>
       </MenuItem>
 
       <br></br>
-      <Button size="small" variant="contained" color="primary">
+      <Button style={{maxWidth: '30px', maxHeight: '20px'}}  variant="contained" color="primary">
         Send
       </Button>
     </div>
