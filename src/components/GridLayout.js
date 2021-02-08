@@ -11,6 +11,9 @@ import TableChart from "./TableChart";
 import BuySell from "./BuySell";
 
 const useStyles = makeStyles((theme) => ({
+  layout:{
+    height:"100px"
+  },
   container: {
     display: "grid",
     gridTemplateColumns: "repeat(12, 1fr)",
@@ -90,7 +93,7 @@ export default function GridLayout() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.layout}>
       <Typography variant="subtitle1" gutterBottom></Typography>
       <Grid container spacing={1}>
         <Grid item xs={12} sm={12}>
@@ -107,7 +110,7 @@ export default function GridLayout() {
             </Button>
           </Paper>
         </Grid>
-        <Grid item xs={5} sm={5}>
+        <Grid item xs={5} sm={2.5}>
           <Paper className={classes.firstRow}></Paper>
         </Grid>
         <Grid item xs={2} sm={2}>
@@ -121,10 +124,10 @@ export default function GridLayout() {
         </Grid>
       </Grid>
       <Grid container spacing={1}>
-        <Grid item xs={1}>
+        <Grid item xs={1} sm={1}>
           <Paper className={classes.secondRow}></Paper>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={6} sm={6}>
           <CandleStick className={classes.secondRow} />
         </Grid>
         <Grid
@@ -137,12 +140,12 @@ export default function GridLayout() {
           xs={3}
         >
           <Paper className={classes.secondMid}></Paper>
-          <Grid item xs={7}>
+          <Grid item xs={7} sm={7}>
             <Paper marginLeft="auto" className={classes.thirdMid}></Paper>
           </Grid>
         </Grid>
 
-        <Grid item xs={1}>
+        <Grid item xs={1} sm={1}>
           <Paper className={classes.secondRow}></Paper>
         </Grid>
       </Grid>
@@ -150,13 +153,13 @@ export default function GridLayout() {
         <Grid item xs={1}>
           <DailyVolume className={classes.thirdRow}></DailyVolume>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={3} >
           <Paper className={classes.thirdRow}></Paper>
         </Grid>
-        <Grid item xs={3} sm={3}>
+        <Grid item xs={3} >
           <Paper className={classes.thirdRow}></Paper>
         </Grid>
-        <Grid item xs={2} sm={3}>
+        <Grid item xs={3} >
           <Paper className={classes.thirdRow}></Paper>
         </Grid>
       </Grid>
