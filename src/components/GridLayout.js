@@ -11,9 +11,6 @@ import TableChart from "./TableChart";
 import BuySell from "./BuySell";
 
 const useStyles = makeStyles((theme) => ({
-  layout:{
-    height:"100px"
-  },
   container: {
     display: "grid",
     gridTemplateColumns: "repeat(12, 1fr)",
@@ -93,7 +90,7 @@ export default function GridLayout() {
   const classes = useStyles();
 
   return (
-    <div className={classes.layout}>
+    <div className="layout">
       <Typography variant="subtitle1" gutterBottom></Typography>
       <Grid container spacing={1}>
         <Grid item xs={12} sm={12}>

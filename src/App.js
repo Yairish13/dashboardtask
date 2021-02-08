@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="main-wrapper">
       <Header />
-      <div className="inner-wrapper">
+      {/* <div className="inner-wrapper"> */}
         <div className="sidebar">
       <DashboardIcon style={{color:"white"}}/><br></br>
       <FormatAlignJustifyIcon style={{color:"white"}}/><br></br>
@@ -48,7 +48,6 @@ function App() {
         </div>
         <GridLayout className="layout" />
       </div>
-    </div>
   );
 }
 

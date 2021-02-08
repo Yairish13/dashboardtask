@@ -39,19 +39,19 @@ export default function TableChart() {
       <Table className={classes.table} size="small" aria-label="a dense table">
         <TableHead>
           <TableRow>
-            <TableCell style={{color: 'grey',fontSize:"5px",height:"5px"}}>Username</TableCell>
-            <TableCell style={{color: 'grey',fontSize:"5px",height:"5px"}}>Time</TableCell>
-            <TableCell style={{color: 'grey',fontSize:"5px",height:"5px"}}>Info</TableCell>
+            <TableCell style={{color: 'grey',fontSize:"5px",height:"5px"}} align="center">Username</TableCell>
+            <TableCell style={{color: 'grey',fontSize:"5px",height:"5px"}} align="center">Time</TableCell>
+            <TableCell style={{color: 'grey',fontSize:"5px",height:"5px"}} align="center">Info</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.name}>
-              <TableCell style={{color: 'grey',fontSize:"5px",height:"10px"}} component="th" scope="row">
+              <TableCell style={{color: 'grey',fontSize:"5px",height:"10px"}} align="center" component="th" scope="row">
                 {row.username}
               </TableCell>
-              <TableCell style={{color: 'grey',fontSize:"5px",height:"10px",paddingRight:"80px"}} align="right">{row.time}</TableCell>
-              <TableCell style={{color: 'orange',fontSize:"5px",height:"10px",paddingRight:"80px"}} align="right">{row.info}</TableCell>
+              <TableCell style={{color: 'grey',fontSize:"5px",height:"10px"}} align="center">{row.time}</TableCell>
+              <TableCell style={{color: 'orange',fontSize:"5px",height:"10px"}} align="center">{row.info}</TableCell>
             </TableRow>
           ))}
         </TableBody>
