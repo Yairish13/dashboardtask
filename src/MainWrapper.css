@@ -5,11 +5,12 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 50px 1fr;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 40px 1fr;
   gap: 0px 0px;
   grid-template-areas:
     "header header"
     "side-bar layout";
+
 }
 .headerDiv { grid-area: header; }
 
@@ -33,10 +34,13 @@
     padding:auto;
     grid-area: "side-bar";
     background-color:#323232;
+    margin-top: 10px;
 
 }
 .layout{
     grid-area: "layout";
     padding-right: 10px;
+    margin-left:10px;
+    margin-top:10px;
 }
 

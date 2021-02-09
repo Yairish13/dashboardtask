@@ -24,7 +24,7 @@ function BuySell() {
   return (
     <div style={style}>
       <Button style={{maxWidth: '30px', maxHeight: '30px'}} color="secondary">Sell</Button>
-      <Button  style={{maxWidth: '30px', maxHeight: '30px'}}size="small" color="primary"disabled>Buy</Button>
+      <Button  style={{maxWidth: '30px', maxHeight: '30px', color:"black"}}size="small" >Buy</Button>
       <br></br>
       <MenuItem style={{maxWidth: '1000px', maxHeight: '20px'}}  size="small" value="Tom Reiven">
         <em>Product</em>
