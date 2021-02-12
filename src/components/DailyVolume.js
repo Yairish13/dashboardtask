@@ -6,8 +6,8 @@ function DailyVolume() {
         backgroundColor:'#3B3B3A',
         color:"white",
         sticky:true,
-        paddingTop:'20px',
-        alignItems:"center"
+        alignText:"center",
+        alignItems:'center'
     }
     const style1={
         color:"green",

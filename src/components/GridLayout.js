@@ -150,10 +150,10 @@ export default function GridLayout() {
         </Grid>
       </Grid>
       <Grid container spacing={1}>
-        <Grid item xs={12} sm={3} lg={1}>
+        <Grid item xs={3} sm={2} lg={1}>
           <DailyVolume className={classes.thirdRow}></DailyVolume>
         </Grid>
-        <Grid item xs={12} sm={8} lg={3} >
+        <Grid item xs={9} sm={9} lg={3} >
           <Paper className={classes.thirdRow}></Paper>
         </Grid>
         <Grid item xs={12} sm={11} lg={3} >

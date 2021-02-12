@@ -1,6 +1,6 @@
 import React from "react";
 import "../header.css";
-import enigma from "./enigma.png";
+import enigma from "../enigma.png";
 import { makeStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
