@@ -1,3 +1,3 @@
 clone then yarn & yarn start - to run the code
-## A ScreenShot of the dashboard
-![image](https://user-images.githubusercontent.com/67858239/107810676-b9c18200-6d75-11eb-86ad-4a96e17b13e8.png)
+## A Screenshot of the dashboard
+<img width="959" alt="M" src="https://user-images.githubusercontent.com/67858239/107812298-26d61700-6d78-11eb-97c4-dd990e624c97.png">
