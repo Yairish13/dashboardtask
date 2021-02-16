@@ -14,19 +14,31 @@ const useStyles = makeStyles((theme) => ({
   selectEmpty: {
     marginTop: theme.spacing(2),
   },
+  dashboardTitle:{
+    paddingLeft: "10px",
+    position: "absolute",
+    paddingTop: "15px",
+  },
+  headerDate:{
+    backgroundColor: "#434343",
+    height: "auto",
+    padding: "10px"
+}
 }));
 
 function Header() {
     const classes = useStyles();
 
   return (
-    <div className="headerDiv">
+    <div className={"headerDiv"}>
       <div>
         {" "}
         <img src={enigma} alt="enigmaPic" />
-        <span className="dashboardTitle">Dashboard</span>
+        <span 
+        className={classes.dashboardTitle}
+        >Dashboard</span>
       </div>
-      <span className="headerDate">3:02:22 PM wednesday, December 16 2020</span>
+      <span className={classes.headerDate}>3:02:22 PM wednesday, December 16 2020</span>
       <FormControl className={classes.formControl}>
       <MenuItem value="Tom Reiven">
           <AccountCircleIcon/>

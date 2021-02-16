@@ -35,7 +35,7 @@ function BuySell() {
       </MenuItem>
 
       <br></br>
-      <Button style={{maxWidth: '30px', maxHeight: '20px'}}  variant="contained" color="primary">
+      <Button style={{maxWidth: '30px', maxHeight: '20px', marginBottom:'5px'}}  variant="contained" color="primary">
         Send
       </Button>
     </div>

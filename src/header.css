@@ -4,13 +4,7 @@
     height:50px;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    
-}
-.headerDate {
-    background-color: #434343;
-    height: auto;
-    padding: 10px;
+    justify-content: space-between;  
 }
 
 img{
@@ -18,9 +12,3 @@ width: 30px;
 height: 30px;
 padding-top: 10px;
 margin-left: 10px;}
-
-.dashboardTitle{
-    padding-left: 10px;
-    position: absolute;
-    padding-top: 15px;
-}
